@@ -1,11 +1,14 @@
 package com.example.counterapp
 
+import android.app.ActionBar
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
     var counter = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         //Decrease function
         decreaseBtn.setOnClickListener(){
-          if  (counter > 0)  counter--  else counter
+            if  (counter > 0)  counter--  else counter
             txt.text = "" + counter
         }
     }
